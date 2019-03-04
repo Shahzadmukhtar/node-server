@@ -14,10 +14,10 @@ hbs.registerPartials(__dirname + '/views/partial');
 hbs.registerHelper("getcurrentyear" , () => {
 return new Date().getFullYear();
 });
-app.use((req, res, next) =>
-{
-    res.render('mantance.hbs');
-});
+// app.use((req, res, next) =>
+// {
+//     res.render('mantance.hbs');
+// });
 
 hbs.registerHelper("convert" , (text) => {
 return text.toUpperCase();
