@@ -3,6 +3,8 @@ var hbs = require('hbs');
 
 var app = express();
 
+var port = process.env.PORT || 3000;
+
 app.set('view engine' , hbs);
 
 app.use(express.static(__dirname + '/public'));
@@ -34,4 +36,4 @@ message: "page not found"
 });
 
 });
-app.listen(3000);
+app.listen(port);
